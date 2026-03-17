@@ -41,7 +41,7 @@ try:
     periodo_seleccionado = st.selectbox('Seleccionar periodo', periodos, index=index_default)
 #########################################
     ## SHOW REPORTS SELLS
-    #########################################
+    #####################################
 
     st.subheader("📤 Ventas - Inkaharvest")
 
