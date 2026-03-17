@@ -12,9 +12,6 @@ load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
-# SUPABASE_URL = "https://wkmulgceuhrvogzivyby.supabase.co"
-# SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndrbXVsZ2NldWhydm9neml2eWJ5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDY4NjY0MiwiZXhwIjoyMDg2MjYyNjQyfQ.ITLUH4TNoScKTmTa7PSgyNqLYle6MTPKjo5bKsmRz_k"
-
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 st.set_page_config(layout="wide")
