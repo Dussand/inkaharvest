@@ -18,7 +18,7 @@ import glob
 # ========================================
 
 # Configuracion de la API (usar variable de entorno en producción)
-genai.configure(api_key="AIzaSyAtA779V7nuiiP5jzYi6jkN02fU8lsf1EM")
+genai.configure(api_key="XXXXXXXXXXX")
 
 def response_json_to_dict(response_text):
     """Extrae JSON de la respuesta de Gemini"""
