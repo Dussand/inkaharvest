@@ -5,9 +5,12 @@ import io
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
+from dotenv import load_dotenv
+import os
 
-SUPABASE_URL = "https://wkmulgceuhrvogzivyby.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndrbXVsZ2NldWhydm9neml2eWJ5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MDY4NjY0MiwiZXhwIjoyMDg2MjYyNjQyfQ.ITLUH4TNoScKTmTa7PSgyNqLYle6MTPKjo5bKsmRz_k"
+load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
