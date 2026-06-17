@@ -28,7 +28,7 @@ def fetch_table(table_name):
 
 try:
     compras_inka = fetch_table("compras_inkahavrvest")
-    ventas_inka = fetch_table("comprobantes_inkah")
+    ventas_inka = fetch_table("ventas_inkah")
 
     hoy = pd.Timestamp.today()
     mes_presentacion = hoy - pd.DateOffset(months=1)
